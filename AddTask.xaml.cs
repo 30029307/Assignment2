@@ -22,9 +22,25 @@ namespace Assignment_2
     /// </summary>
     public sealed partial class AddTask : Page
     {
+
+        List<Task> taskList = new List<Task>();
+
         public AddTask()
         {
             this.InitializeComponent();
         }
+
+        private void buttonAdd_Click(object sender, RoutedEventArgs e)
+        {
+            listViewTask.ItemsSource = null;
+
+
+            taskList.Add(new Task() { TaskName = textBoxTask.Text, IsDone = false });
+
+            listViewTask.ItemsSource = taskList;
+            
+        }
+
+    
     }
 }

@@ -13,9 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+
 using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -41,52 +39,12 @@ namespace Assignment_2
 
         private void buttonLogin_Click(object sender, RoutedEventArgs e)
         {
-
-
-            Frame.Navigate(typeof(Login));
-
+           Frame.Navigate(typeof(Login));
         }
 
-        private async void buttonRegister_Click(object sender, RoutedEventArgs e)
+        private  void buttonRegister_Click(object sender, RoutedEventArgs e)
         {
-            MessageDialog msg = new MessageDialog("");
-
-            if (textBoxUsername.Text == "" &&
-                textBoxLastname.Text == "" &&
-                textBoxUsername.Text == "" &&
-                textBoxPassword.Password == "" &&
-                textBoxEmail.Text == "" &&
-                textBoxContact.Text == "")
-            {
-
-                msg.Content = "Please complete details.";
-
-            }
-            else if (textBoxUsername.Text != "" &&
-                     textBoxLastname.Text != "" &&
-                     textBoxUsername.Text != "" &&
-                     textBoxPassword.Password != "" &&
-                     textBoxEmail.Text != "" &&
-                     textBoxContact.Text != "") {
-                App.user.Add(new User
-                {
-                    FirstName = textBoxFirstname.Text,
-                    LastName = textBoxLastname.Text,
-                    Username = textBoxUsername.Text,
-                    Password = textBoxPassword.Password,
-                    Email = textBoxEmail.Text,
-                    Contact = textBoxContact.Text,
-                });
-
-                msg.Content = "Registraition Successfully";
-                Frame.Navigate(typeof(Login));
-
-            }
-            else { msg.Content = "Please complete details."; }
-
-
-
-            await msg.ShowAsync();
+            App.Register(textBoxUsername,textBoxPassword,textBoxFirstname,textBoxLastname,textBoxEmail,textBoxContact,Frame);
         }
 
      

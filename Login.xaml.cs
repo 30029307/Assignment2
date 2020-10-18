@@ -38,23 +38,9 @@ namespace Assignment_2
         
         }
 
-        private async  void buttonLogin_Click(object sender, RoutedEventArgs e)
+        public  void buttonLogin_Click(object sender, RoutedEventArgs e)
         {
-            MessageDialog msg = new MessageDialog("", "");
-
-            var userQuery = App.user.Where(u => u.Username.Equals(textBoxUsername.Text) && u.Password.Equals(textBoxPass.Password)).FirstOrDefault();
-
-            if (userQuery == null)
-            {
-                msg.Content = "Invalid Account";
-                msg.Title = "Login Failed";
-            }
-            else
-            {
-                msg.Content = String.Format("Welcome {0}",userQuery.Username);
-                msg.Title = "Login Successful";
-            }
-           await msg.ShowAsync();
+            App.Login(textBoxUsername,textBoxPass,Frame);
         }
     }
 }

@@ -10,13 +10,13 @@
 
     <Grid>
         <StackPanel Margin="15">
-            <TextBlock x:Name="textBlockRegister" Text="Register" FontSize="60" FontWeight="SemiBold" />
-            <TextBox x:Name="textBoxFirstname" Margin="0,20,0,0" HorizontalTextAlignment="Left" HorizontalContentAlignment="Center" BorderThickness="0,0,0,2" Height="30" PlaceholderText="First Name" FontSize="20" FontWeight="SemiBold"/>
-            <TextBox x:Name="textBoxLastname" Margin="0,20,0,0" BorderThickness="0,0,0,2" Height="30" PlaceholderText="Last Name" FontSize="20" FontWeight="SemiBold"/>
-            <TextBox x:Name="textBoxUsername" Margin="0,20,0,0" BorderThickness="0,0,0,2" Height="30" PlaceholderText="Username" FontSize="20" FontWeight="SemiBold"/>
-            <PasswordBox x:Name="textBoxPassword" Margin="0,20,0,0" BorderThickness="0,0,0,2" Height="30" PlaceholderText="Password" FontSize="20" FontWeight="SemiBold"/>
-            <TextBox x:Name="textBoxEmail" Margin="0,20,0,0" BorderThickness="0,0,0,2" Height="30" PlaceholderText="Email" FontSize="20" FontWeight="SemiBold"/>
-            <TextBox x:Name="textBoxContact" Margin="0,20,0,0" BorderThickness="0,0,0,2" Height="30" PlaceholderText="Contact" FontSize="20" FontWeight="SemiBold"/>
+            <TextBlock x:Name="textBlockRegister" Text="Register" FontSize="40" FontWeight="SemiBold" />
+            <TextBox x:Name="textBoxFirstname" Style="{StaticResource RegisterTextBox}" PlaceholderText="First Name" />
+            <TextBox x:Name="textBoxLastname"  Style="{StaticResource RegisterTextBox}"  PlaceholderText="Last Name" />
+            <TextBox x:Name="textBoxUsername" Style="{StaticResource RegisterTextBox}" PlaceholderText="Username"  />
+            <PasswordBox x:Name="textBoxPassword" Style="{StaticResource Password}" PlaceholderText="Password" />
+            <TextBox x:Name="textBoxEmail" Style="{StaticResource RegisterTextBox}" PlaceholderText="Email" />
+            <TextBox x:Name="textBoxContact" Style="{StaticResource RegisterTextBox}" PlaceholderText="Contact" />
             <RadioButton Margin="8,15,0,0" Content="I Accept terms and conditions and privacy policy" FontSize="20" FontWeight="Thin"/>
             <RelativePanel Margin="0,20,0,0" >
                 <Button x:Name="buttonRegister" Click="buttonRegister_Click" Margin="0,0,20,0" Content="Register" Width="180" FontSize="30" RelativePanel.LeftOf="buttonLogin" CornerRadius="25,25,25,25" Background="#FFFA1744" Foreground="AntiqueWhite" />

@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -27,7 +28,10 @@ namespace Assignment_2
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
-        /// 
+        ///
+
+        
+
         internal static List<User> user = new List<User>() { new User() { FirstName = "Paul", LastName = "Morris", Contact = "1", Email = "//", Id = 1, Username = "paul", Password = "1234" } };
         public App()
         {
@@ -73,6 +77,7 @@ namespace Assignment_2
                     // configuring the new page by passing required information as a navigation
                     // parameter
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
@@ -102,5 +107,71 @@ namespace Assignment_2
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        internal static async void Login(TextBox textBoxUsername,PasswordBox textBoxPass,Frame frame) {
+
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            MessageDialog msg = new MessageDialog("", "");
+
+            var userQuery = App.user.Where(u => u.Username.Equals(textBoxUsername.Text) && u.Password.Equals(textBoxPass.Password)).FirstOrDefault();
+
+            if (userQuery == null)
+            {
+                msg.Content = "Invalid Account";
+                msg.Title = "Login Failed";
+            }
+            else
+            {
+                msg.Content = String.Format("Welcome {0}", userQuery.Username);
+                msg.Title = "Login Successful";
+                rootFrame.Navigate(typeof(MainPage));
+            }
+            await msg.ShowAsync();
+        }
+
+        internal static async void Register(TextBox textBoxUsername,PasswordBox textBoxPassword,TextBox textBoxFirstname,TextBox textBoxLastname, TextBox textBoxEmail, TextBox textBoxContact,Frame frame) {
+           
+            MessageDialog msg = new MessageDialog("");
+
+            if (textBoxFirstname.Text == "" &&
+                textBoxLastname.Text == "" &&
+                textBoxUsername.Text == "" &&
+                textBoxPassword.Password == "" &&
+                textBoxEmail.Text == "" &&
+                textBoxContact.Text == "")
+            {
+
+                msg.Content = "Please complete details.";
+
+            }
+            else if (textBoxFirstname.Text != "" &&
+                     textBoxLastname.Text != "" &&
+                     textBoxUsername.Text != "" &&
+                     textBoxPassword.Password != "" &&
+                     textBoxEmail.Text != "" &&
+                     textBoxContact.Text != "")
+            {
+                App.user.Add(new User
+                {
+                    FirstName = textBoxFirstname.Text,
+                    LastName = textBoxLastname.Text,
+                    Username = textBoxUsername.Text,
+                    Password = textBoxPassword.Password,
+                    Email = textBoxEmail.Text,
+                    Contact = textBoxContact.Text,
+                });
+
+                msg.Content = "Registration Successfully";
+                frame.Navigate(typeof(Login));
+
+            }
+            else { msg.Content = "Please complete details."; }
+
+
+
+            await msg.ShowAsync();
+        }
+    
     }
 }
