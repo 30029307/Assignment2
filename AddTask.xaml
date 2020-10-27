@@ -12,30 +12,29 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox x:Name="textBoxTask" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Button Name="buttonAdd" Click="buttonAdd_Click" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-           
-        </StackPanel>
-        <StackPanel Margin="50" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Border BorderBrush="Gray" BorderThickness="5" Height="500" Width="400">
-                <ListView x:Name="listViewTask">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <CheckBox IsChecked="{Binding IsDone}"></CheckBox>
-                                <TextBlock Text="{Binding TaskName}"></TextBlock>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
 
-            </Border>
-          
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <RelativePanel x:Name="relativePanelJoke" Background="Black">
+            <TextBlock x:Name="textBlockFirstLine" FontSize="30" Text="test" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" TextWrapping="Wrap" Foreground="GhostWhite" FontStyle="Italic"/>
+            <TextBlock x:Name="textBlockSecondLine" FontSize="30" Text="test" RelativePanel.Below="textBlockFirstLine" RelativePanel.AlignHorizontalCenterWithPanel="True"  TextWrapping="Wrap" Foreground="GhostWhite" FontStyle="Italic"/>
+
+        </RelativePanel>
+        
+        
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <TextBox x:Name="textBoxTask" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <DatePicker x:Name="datePicker" Header="Select a due date:"/>
+            <Button Name="buttonAdd" Click="buttonAdd_Click" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+     
+
         </StackPanel>
+   
         
     </Grid>
 </Page>

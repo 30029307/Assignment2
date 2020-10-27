@@ -42,6 +42,7 @@ namespace Assignment_2
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(AddTask));
+        
 
         }
 

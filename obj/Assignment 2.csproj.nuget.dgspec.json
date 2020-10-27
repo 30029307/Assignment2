@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\30029307\\source\\repos\\Assignment2\\Assignment 2.csproj": {}
+    "C:\\Users\\Derick\\source\\repos\\Assignment2\\Assignment 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\30029307\\source\\repos\\Assignment2\\Assignment 2.csproj": {
+    "C:\\Users\\Derick\\source\\repos\\Assignment2\\Assignment 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\30029307\\source\\repos\\Assignment2\\Assignment 2.csproj",
+        "projectUniqueName": "C:\\Users\\Derick\\source\\repos\\Assignment2\\Assignment 2.csproj",
         "projectName": "Assignment 2",
-        "projectPath": "C:\\Users\\30029307\\source\\repos\\Assignment2\\Assignment 2.csproj",
-        "packagesPath": "C:\\Users\\30029307\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\30029307\\source\\repos\\Assignment2\\obj\\",
+        "projectPath": "C:\\Users\\Derick\\source\\repos\\Assignment2\\Assignment 2.csproj",
+        "packagesPath": "C:\\Users\\Derick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Derick\\source\\repos\\Assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\30029307\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Derick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

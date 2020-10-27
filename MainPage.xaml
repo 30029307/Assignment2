@@ -9,11 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <SplitView x:Name="MySplitView" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" DisplayMode="CompactInline">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        
+        <SplitView x:Name="MySplitView" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" DisplayMode="CompactInline" Grid.Row="0">
             <SplitView.Pane>
                 <StackPanel>
-                    <Button x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" Click="buttonMain_Click" />
+
                     <StackPanel Orientation="Horizontal">
+                        <Button x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" Click="buttonMain_Click"/>
+                        <TextBlock FontWeight="SemiBold" FontSize="12" VerticalAlignment="Center" Margin="10" Text="Welcome daskdjasdsajdskdjs"/>
+                    </StackPanel>
+                       <StackPanel Orientation="Horizontal">
                         <Button x:Name="buttonAdd" Click="buttonAdd_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="ADD TASK"/>
                     </StackPanel>
@@ -23,7 +33,7 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Button FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
-                        <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="ADD TASK"/>
+                        <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="DRINK"/>
                     </StackPanel>
 
                 </StackPanel>
@@ -36,8 +46,12 @@
             </SplitView.Content>
         </SplitView>
 
-   
-    
+        <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="0,3,0,0" Background="White" CornerRadius="0,0,0,0" RelativePanel.AlignBottomWithPanel="True" Height="40" Width="auto">
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="30" Margin="-5">ASD</TextBlock>
+        </Border>
+
+
+
     </Grid>
     
     

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Assignment_2.Models;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -7,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Networking.BackgroundTransfer;
 using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -16,6 +19,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 
 namespace Assignment_2
 {
@@ -29,16 +33,34 @@ namespace Assignment_2
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         ///
+         static Random rand = new Random();
 
-        
 
         internal static List<User> user = new List<User>() { new User() { FirstName = "Paul", LastName = "Morris", Contact = "1", Email = "//", Id = 1, Username = "paul", Password = "1234" } };
+
+        internal static string[] bgColors = new string[] {
+            "#FFE2869F",
+            "#FFDFC07D",
+            "#FF598286",
+            "#FFE16364",
+            "#FFAEDD97",
+            "#FF578386",
+            "#FFE2849E",
+            "#FFE285A0",
+            "#FFAEDD95",
+            "#FF94DCC4",
+            "#FF598288",
+            "#FF97DDC5",
+            "#FFE1C37D",          
+        };
+
         public App()
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
-           
+
+          //  Tasks = TaskManager.GetTasks();
 
         }
 
@@ -110,7 +132,7 @@ namespace Assignment_2
 
         internal static async void Login(TextBox textBoxUsername,PasswordBox textBoxPass,Frame frame) {
 
-            Frame rootFrame = Window.Current.Content as Frame;
+           // Frame rootFrame = Window.Current.Content as Frame;
 
             MessageDialog msg = new MessageDialog("", "");
 
@@ -125,7 +147,7 @@ namespace Assignment_2
             {
                 msg.Content = String.Format("Welcome {0}", userQuery.Username);
                 msg.Title = "Login Successful";
-                rootFrame.Navigate(typeof(MainPage));
+                frame.Navigate(typeof(MainPage));
             }
             await msg.ShowAsync();
         }
@@ -172,6 +194,35 @@ namespace Assignment_2
 
             await msg.ShowAsync();
         }
-    
+
+        internal static  void RandomBackground(RelativePanel rp) {
+             
+            rp.Background = GetSolidColorBrush(bgColors[rand.Next(0, bgColors.Length)]);
+
+        }
+
+        internal static SolidColorBrush GetSolidColorBrush(string hex)
+        {
+            hex = hex.Replace("#", string.Empty);
+            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
+            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
+            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
+            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
+            SolidColorBrush myBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
+            return myBrush;
+        }
+
+        internal static void DisplayJoke(TextBlock tb1, TextBlock tb2) {
+
+            int randomJokeNumber = rand.Next(0, JokeManager.Jokes.Count);
+
+
+
+
+            tb1.Text = "\"" + JokeManager.Jokes[randomJokeNumber].FirstLine + "\"";
+            tb2.Text = JokeManager.Jokes[randomJokeNumber].SecondLine;
+
+            
+        }
     }
 }

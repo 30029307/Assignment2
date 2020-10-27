@@ -55,7 +55,6 @@ C:\Users\30029307\source\repos\Assignment 2\obj\x86\Debug\Login.xaml
 C:\Users\30029307\source\repos\Assignment 2\obj\x86\Debug\Login.xbf
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\App.xbf
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Login.xbf
-C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Main.xbf
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Registration.xbf
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Assignment 2.xr.xml
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Assignment 2.exe
@@ -67,23 +66,18 @@ C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Core\Assignment 2.exe
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Assignment 2.build.appxrecipe
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\System.Runtime.dll
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csprojAssemblyReference.cache
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\App.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\App.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Login.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Login.g.cs
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Main.g.i.cs
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Main.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Registration.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Registration.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\App.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Login.xaml
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Main.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Registration.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\App.xbf
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Login.xbf
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Main.xbf
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Registration.xbf
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csproj.CoreCompileInputs.cache
@@ -107,12 +101,7 @@ C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\qualifiers.txt
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112174540000000.json
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112318540000000.json
-C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\FireSharp.dll
-C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\FireSharp.Serialization.JsonNet.dll
-C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Newtonsoft.Json.dll
-C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\RestSharp.dll
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\MainPage.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\MainPage.xbf
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\MainPage.xbf
@@ -199,3 +188,9 @@ C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.g.i.cs
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.g.cs
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.xaml
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.xbf
+C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\StartPage.xbf
+C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.g.i.cs
+C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.g.cs
+C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.xaml
+C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.xbf
+C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csprojAssemblyReference.cache

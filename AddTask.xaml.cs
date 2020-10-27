@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,24 +25,24 @@ namespace Assignment_2
     public sealed partial class AddTask : Page
     {
 
-        List<Task> taskList = new List<Task>();
+
 
         public AddTask()
         {
             this.InitializeComponent();
+            App.RandomBackground(relativePanelJoke);
+            App.DisplayJoke(textBlockFirstLine,textBlockSecondLine);
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            listViewTask.ItemsSource = null;
 
+            TaskManager.AddTask(textBoxTask.Text, datePicker.SelectedDate.Value.Date.ToShortDateString());
 
-            taskList.Add(new Task() { TaskName = textBoxTask.Text, IsDone = false });
-
-            listViewTask.ItemsSource = taskList;
-            
         }
 
+
     
+
     }
 }
