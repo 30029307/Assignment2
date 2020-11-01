@@ -25,13 +25,22 @@ namespace Assignment_2
     public sealed partial class AddTask : Page
     {
 
+        public DispatcherTimer timer;
+        int ctr = 0;
 
 
         public AddTask()
         {
             this.InitializeComponent();
-            App.RandomBackground(relativePanelJoke);
-            App.DisplayJoke(textBlockFirstLine,textBlockSecondLine);
+
+            App.RandomBackground(gridAddTask);
+            App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
+
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0,0,1);
+            
+            timer.Start();
+            timer.Tick += timer_tick;
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
@@ -41,6 +50,20 @@ namespace Assignment_2
 
         }
 
+        void timer_tick(object sender, object e ) {
+
+            ctr++;
+
+            if (ctr >= 8) {
+                ctr = 0;
+
+                App.RandomBackground(gridAddTask);
+                App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
+
+
+            }
+
+        }
 
     
 

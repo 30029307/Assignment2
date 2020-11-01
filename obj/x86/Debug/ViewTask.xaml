@@ -9,6 +9,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="textBlockHeader">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+
+        <Style TargetType="Rectangle" x:Key="rectangleDivider">
+            <Setter Property="Fill" Value="#FF8E8E8E"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Width" Value="5"/>
+            <Setter Property="Height" Value="500"/>
+            <Setter Property="Grid.RowSpan" Value="3"/>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Yellow-background.png" Stretch="UniformToFill" Opacity="0.75"/>
@@ -21,21 +39,17 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-
             <ColumnDefinition Width="auto"/>
-
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="1.3*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="0" Text="Not Completed" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Gray"/>
-        <TextBlock Grid.Column="2" Text="Completed" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Gray"/>
+        <TextBlock Grid.Column="0" Text="Not Completed" Style="{StaticResource textBlockHeader}"/>
+        <TextBlock Grid.Column="2" Text="Completed" Style="{StaticResource textBlockHeader}" />
 
-        <Rectangle  Fill="#FF8E8E8E" Grid.Column="1" Width="5" Height="500" Grid.RowSpan="3"></Rectangle>
+        <Rectangle   Style="{StaticResource rectangleDivider}"/>
 
-
-     
-            <ListView x:ConnectionId='2' x:Name="listViewIncomplete"                                         IsItemClickEnabled="False" Grid.Row="1">
+        <ListView x:ConnectionId='2' x:Name="listViewIncomplete"                                         IsItemClickEnabled="False" Grid.Row="1">
                 <ListView.ItemTemplate>
                     <DataTemplate                        >
                     <StackPanel x:ConnectionId='20' Orientation="Horizontal" Margin="10">

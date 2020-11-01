@@ -18,7 +18,7 @@
             <TextBlock Margin="20,110,0,0" FontSize="78" FontWeight="SemiBold" Foreground="#FFFFF8F2"  Text="Hello"/>
             <TextBlock Margin="20,170,0,0" FontSize="100" FontWeight="Bold" Foreground="#FFFFF8F2"  Text="Derick."/>
         </Grid>
-
+        
         <Frame x:Name="MainFrame" x:FieldModifier="Public" Grid.Column="1"></Frame>
     </Grid>
 </Page>

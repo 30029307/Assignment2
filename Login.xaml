@@ -7,10 +7,36 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="425" Height="800">
 
+    <Page.Resources>
+        <Style TargetType="TextBox" x:Key="TextBox" >
+            <Setter Property="Margin" Value="0,60,0,0"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            
+        </Style>
+
+        <Style TargetType="PasswordBox"  x:Key="PasswordBox" >
+            <Setter Property="Margin" Value="0,60,0,0"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="LoginTextBlock">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+    </Page.Resources>
+    
+    
     <Grid>
         <StackPanel Margin="20,50,20,20">
             
-            <TextBlock x:Name="textBlockLogin" Text="Login"  FontSize="40" FontWeight="SemiBold" />
+            <TextBlock x:Name="textBlockLogin" Text="Login"  Style="{StaticResource LoginTextBlock}" />
             <StackPanel Width="390" HorizontalAlignment="Left" Margin="0,0,0,0">
                 <TextBlock FontSize="15" TextWrapping="Wrap" >
                      Does have an account? ,
@@ -18,16 +44,16 @@
                      it takes less a minute.
                 </TextBlock>
             </StackPanel>
-            <TextBox x:Name="textBoxUsername" Margin="0,60,0,0" Text="paul" BorderThickness="0,0,0,2" Height="40" PlaceholderText="Username" FontSize="20" FontWeight="SemiBold"/>
-            <PasswordBox x:Name="textBoxPass" Margin="0,100,0,0" Password="1234" BorderThickness="0,0,0,2" Height="40" PlaceholderText="Password" FontSize="20" FontWeight="SemiBold"/>
+            <TextBox x:Name="textBoxUsername"  Text="paul"  PlaceholderText="Username" Style="{StaticResource TextBox}" />
+            <PasswordBox x:Name="textBoxPass"  Password="1234"  PlaceholderText="Password" Style="{StaticResource PasswordBox}" />
             <RelativePanel Margin="0,30,0,0" >
-                <Button x:Name="buttonLogin" Click="buttonLogin_Click" Content="Login" Height="30"  Width="80" RelativePanel.AlignRightWithPanel="True"  FontSize="12" CornerRadius="15,15,15,15"  Background="#FFC5C5C5" Foreground="Black">
-                    <Button.Flyout>
-                        <Flyout>
-                            <TextBlock Text="Test"/>
-                        </Flyout>
-                    </Button.Flyout>
-                </Button>
+                <Button x:Name="buttonLogin" Click="buttonLogin_Click" Content="Login" Style="{StaticResource LoginButton}">
+                <Button.Flyout>
+                    <Flyout>
+                        <TextBlock Text="Test"/>
+                    </Flyout>
+                </Button.Flyout>
+                    </Button>
             </RelativePanel>
         </StackPanel>
     </Grid>

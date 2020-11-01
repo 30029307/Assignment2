@@ -8,6 +8,11 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="Button" >
+            
+        </Style>
+    </Page.Resources>
     <Grid>
 
         <Grid.RowDefinitions>
@@ -17,7 +22,7 @@
         
         <SplitView x:ConnectionId='2' x:Name="MySplitView" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" DisplayMode="CompactInline" Grid.Row="0">
             <SplitView.Pane>
-                <StackPanel>
+                <StackPanel Background="LightGray">
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:ConnectionId='5' x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;"                         />

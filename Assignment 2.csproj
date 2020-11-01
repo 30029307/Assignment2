@@ -148,6 +148,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\border.png" />
     <Content Include="Assets\complete.png" />
     <Content Include="Assets\incomplete.png" />
     <Content Include="Assets\Yellow-background.png" />

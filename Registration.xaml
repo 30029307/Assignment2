@@ -20,7 +20,7 @@
             <RadioButton Margin="8,15,0,0" Content="I Accept terms and conditions and privacy policy" FontSize="20" FontWeight="Thin"/>
             <RelativePanel Margin="0,20,0,0" >
                 <Button x:Name="buttonRegister" Click="buttonRegister_Click" Margin="0,0,20,0" Content="Register" Width="180" FontSize="30" RelativePanel.LeftOf="buttonLogin" CornerRadius="25,25,25,25" Background="#FFFA1744" Foreground="AntiqueWhite" />
-                <Button x:Name="buttonLogin" Click="buttonLogin_Click" Content="Login" Width="130 " RelativePanel.AlignRightWithPanel="True"   FontSize="30" CornerRadius="25,25,25,25"  Background="#FFC5C5C5" Foreground="Black"/>
+                <Button x:Name="buttonLogin" Click="buttonLogin_Click" Content="Login" Style="{StaticResource LoginButton}" />
             </RelativePanel>
         
         </StackPanel>

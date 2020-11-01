@@ -195,7 +195,7 @@ namespace Assignment_2
             await msg.ShowAsync();
         }
 
-        internal static  void RandomBackground(RelativePanel rp) {
+        internal static  void RandomBackground(Grid rp) {
              
             rp.Background = GetSolidColorBrush(bgColors[rand.Next(0, bgColors.Length)]);
 
