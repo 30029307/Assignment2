@@ -26,14 +26,14 @@
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:ConnectionId='5' x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;"                         />
-                        <TextBlock FontWeight="SemiBold" FontSize="12" VerticalAlignment="Center" Margin="10" Text="Welcome daskdjasdsajdskdjs"/>
+                        <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="Welcome"/>
                     </StackPanel>
                        <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='4' x:Name="buttonAdd"                         FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button x:ConnectionId='4' x:Name="buttonAdd"                         FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xED0E;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="ADD TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='3' x:Name="buttonView"                          FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button x:ConnectionId='3' x:Name="buttonView"                          FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEE92;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="VIEW TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">

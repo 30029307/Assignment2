@@ -59,8 +59,6 @@ namespace Assignment_2
 
                 App.RandomBackground(gridAddTask);
                 App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
-
-
             }
 
         }

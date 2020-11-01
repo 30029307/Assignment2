@@ -26,18 +26,18 @@
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" Click="buttonMain_Click"/>
-                        <TextBlock FontWeight="SemiBold" FontSize="12" VerticalAlignment="Center" Margin="10" Text="Welcome daskdjasdsajdskdjs"/>
+                        <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="Welcome"/>
                     </StackPanel>
                        <StackPanel Orientation="Horizontal">
-                        <Button x:Name="buttonAdd" Click="buttonAdd_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button x:Name="buttonAdd" Click="buttonAdd_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xED0E;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="ADD TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="buttonView" Click="buttonView_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button x:Name="buttonView" Click="buttonView_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEE92;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="VIEW TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEB42;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="DRINK"/>
                     </StackPanel>
 

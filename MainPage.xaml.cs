@@ -49,6 +49,8 @@ namespace Assignment_2
         private void buttonView_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(ViewTask));
+
+            
         }
     }
 }

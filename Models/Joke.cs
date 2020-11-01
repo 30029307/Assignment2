@@ -22,7 +22,7 @@ namespace Assignment_2.Models
             new Joke() { FirstLine = "And the Lord said unto John,\"Come forth and you will receive eternal life.\"",SecondLine = "But John came fifth, and won a toaster." },
             new Joke() { FirstLine = "I threw a boomerang a few years ago.",SecondLine = "I now live in constant fear." },
             new Joke() { FirstLine = "Parallel lines have so much in common.",SecondLine = "It's a shame they'll never meet." },
-            new Joke() { FirstLine = "My grandfather has the heart of a lion and a lifetim ban at the zoo.",SecondLine = "" },
+            new Joke() { FirstLine = "My grandfather has the heart of a lion and a lifetime ban at the zoo.",SecondLine = "" },
             new Joke() { FirstLine = "Women only call me ugly until they find out how much money I make.",SecondLine = "Then they call me ugly and poor." },
             new Joke() { FirstLine = "You're not completely useless, you can always serve as a bad example.",SecondLine = "" },
             new Joke() { FirstLine = "I broke my finger last week. On the other hand, I'm okay",SecondLine = "" },
@@ -53,6 +53,8 @@ namespace Assignment_2.Models
             new Joke() { FirstLine = "Why is the math book so sad?",SecondLine = "It's got too many problems." },
             new Joke() { FirstLine = "Jokes about unemployed people are not funny.",SecondLine = "They just dont't work." },
          
+
+            
         };
 
     }
