@@ -153,6 +153,7 @@
   <ItemGroup>
     <Content Include="Assets\border.png" />
     <Content Include="Assets\complete.png" />
+    <Content Include="Assets\drinkinfo.gif" />
     <Content Include="Assets\incomplete.png" />
     <Content Include="Assets\Yellow-background.png" />
     <Content Include="Properties\Default.rd.xml" />

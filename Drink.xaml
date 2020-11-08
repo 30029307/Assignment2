@@ -10,14 +10,20 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
         
             <TextBlock x:Name="timerTextBlock" Text="test" FontSize="40" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Image Source="/Assets/drinkinfo.gif" Width="500" Height="350" Grid.Row="1"/>
+
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" >
-            <ComboBox x:Name="comboBox" SelectionChanged="comboBoxName_SelectionChanged" Margin="0" Width="150" >
+            <ComboBox x:Name="comboBox" SelectionChanged="comboBoxName_SelectionChanged" Header="Remind me in:" Margin="0" Width="150" >
+
+                <ComboBoxItem Content="15 secs"/>
+                <ComboBoxItem Content="30 secs"/>
                 <ComboBoxItem Content="1 min"/>
                 <ComboBoxItem Content="5 mins"/>
                 <ComboBoxItem Content="10 mins"/>
@@ -27,7 +33,7 @@
             <Button x:Name="startButton" Content="Start" Width="100" Margin="25,0,0,0" Click="startButton_Click"/>
 
         </StackPanel>
-
+    
 
 
     </Grid>

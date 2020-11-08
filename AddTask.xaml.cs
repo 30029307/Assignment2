@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.SpeechSynthesis;
 using Windows.UI;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -27,12 +28,13 @@ namespace Assignment_2
 
         public DispatcherTimer timer;
         int ctr = 0;
+      
 
 
         public AddTask()
         {
             this.InitializeComponent();
-
+           
             App.RandomBackground(gridAddTask);
             App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
 
@@ -45,25 +47,32 @@ namespace Assignment_2
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-
             TaskManager.AddTask(textBoxTask.Text, datePicker.SelectedDate.Value.Date.ToShortDateString());
-
         }
 
         void timer_tick(object sender, object e ) {
 
+           
+            var frame = Window.Current.Content as Frame;
+
+            //App.Speak();
             ctr++;
 
-            if (ctr >= 8) {
-                ctr = 0;
+           
 
-                App.RandomBackground(gridAddTask);
-                App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
+            if (ctr >= 8 && frame.Name == "AddTask") {
+                ctr = 0;
+                    App.RandomBackground(gridAddTask);
+                    App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
             }
 
         }
 
-    
+     
+
+
+
+
 
     }
 }

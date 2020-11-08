@@ -133,7 +133,6 @@ C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Core\Assignment 2.exe
 C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Assignment 2.build.appxrecipe
 C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\System.Runtime.dll
 C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csprojAssemblyReference.cache
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\App.g.i.cs
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\App.g.cs
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\AddTask.g.i.cs
@@ -182,7 +181,6 @@ C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\qualifiers.txt.intermed
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112174540000000.json
-C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112318540000000.json
 C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\StartPage.xbf
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.g.i.cs
 C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\StartPage.g.cs
@@ -199,3 +197,9 @@ C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.xbf
+C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Drink.xbf
+C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Drink.g.i.cs
+C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Drink.g.cs
+C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Drink.xaml
+C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Drink.xbf
+C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csprojAssemblyReference.cache

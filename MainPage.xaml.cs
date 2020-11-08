@@ -37,16 +37,17 @@ namespace Assignment_2
             {
                 MySplitView.IsPaneOpen = true;
             }
-            else {
+            else
+            {
                 MySplitView.IsPaneOpen = false;
             }
+
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(AddTask));
-        
-
+       
         }
 
         private void buttonView_Click(object sender, RoutedEventArgs e)

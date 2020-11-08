@@ -43,24 +43,10 @@ namespace Assignment_2
         {
             if (time > 0)
             {
-                if (time <= 10)
-                {
-                    if (time % 2 == 0)
-                    {
-                        timerTextBlock.Foreground = new SolidColorBrush(Colors.Red);
-                    }
-                    else
-                    {
-                        timerTextBlock.Foreground = new SolidColorBrush(Colors.White);
-                    }
+              
                     time--;
                     timerTextBlock.Text = string.Format("{0} mins:{1} secs", time / 60, time % 60);
-                }
-                else
-                {
-                    time--;
-                    timerTextBlock.Text = string.Format("{0} mins:{1} secs", time / 60, time % 60);
-                }
+                
             }
             else
             {
@@ -79,16 +65,18 @@ namespace Assignment_2
 
         private void comboBoxName_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
+            timerTextBlock.FontSize = 70;
             timerTextBlock.Foreground = new SolidColorBrush(Colors.Black);
             ComboBoxItem cmb = comboBox.SelectedItem as ComboBoxItem;
             string test = cmb.Content.ToString();
-
-            if (test == "1 min") time = 60;
+            if (test == "15 secs") time = 15;
+            else if (test == "30 secs") time = 30;
+            else if (test == "1 min") time = 60;
             else if (test == "5 mins") time = 300;
             else if (test == "10 mins") time = 600;
             else if (test == "20 mins") time = 1200;
             else if (test == "30 mins") time = 1800; 
-
             timerTextBlock.Text = test;
         }
 

@@ -9,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.SpeechSynthesis;
 using Windows.Networking.BackgroundTransfer;
 using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
@@ -35,6 +36,7 @@ namespace Assignment_2
         ///
          static Random rand = new Random();
 
+      
 
         internal static List<User> user = new List<User>() { new User() { FirstName = "Paul", LastName = "Morris", Contact = "1", Email = "//", Id = 1, Username = "paul", Password = "1234" } };
 
@@ -212,17 +214,30 @@ namespace Assignment_2
             return myBrush;
         }
 
-        internal static void DisplayJoke(TextBlock tb1, TextBlock tb2) {
+        internal async static void DisplayJoke(TextBlock tb1, TextBlock tb2) {
 
+            SpeechSynthesizer r = new SpeechSynthesizer();
+            MediaElement mediaplayer = new MediaElement();
+            var voice = SpeechSynthesizer.AllVoices;
+            r.Voice = voice.First(gender => gender.Gender == VoiceGender.Female);
             int randomJokeNumber = rand.Next(0, JokeManager.Jokes.Count);
 
-
-
+            /////////////////////////////////////////////////////////////////////////
 
             tb1.Text = "\"" + JokeManager.Jokes[randomJokeNumber].FirstLine + "\"";
             tb2.Text = JokeManager.Jokes[randomJokeNumber].SecondLine;
-
             
+
+            var stream = await r.SynthesizeTextToStreamAsync(tb1.Text + tb2.Text);
+            mediaplayer.SetSource(stream, stream.ContentType);
+            mediaplayer.Play();
+
+
+
         }
+
+       
+
+
     }
 }

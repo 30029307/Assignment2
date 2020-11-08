@@ -93,6 +93,7 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Style" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.UIElement">
@@ -148,6 +149,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Assignment_2.AddTask" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Items" />
