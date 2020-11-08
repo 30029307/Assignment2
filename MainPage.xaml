@@ -37,7 +37,7 @@
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="VIEW TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEB42;" />
+                        <Button x:Name="buttonDrive" Click="buttonDrive_Click" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEB42;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="DRINK"/>
                     </StackPanel>
 

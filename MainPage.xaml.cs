@@ -5,10 +5,12 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Documents;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
@@ -25,6 +27,7 @@ namespace Assignment_2
         public MainPage()
         {
             this.InitializeComponent();
+           
             MyFrame.Navigate(typeof(AddTask));
         }
 
@@ -51,6 +54,11 @@ namespace Assignment_2
             MyFrame.Navigate(typeof(ViewTask));
 
             
+        }
+
+        private void buttonDrive_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(Drink));
         }
     }
 }

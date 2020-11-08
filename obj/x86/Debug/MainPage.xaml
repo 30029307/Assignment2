@@ -25,19 +25,19 @@
                 <StackPanel Background="LightGray">
 
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='5' x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;"                         />
+                        <Button x:ConnectionId='6' x:Name="buttonMain" FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;"                         />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="Welcome"/>
                     </StackPanel>
                        <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='4' x:Name="buttonAdd"                         FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xED0E;" />
+                        <Button x:ConnectionId='5' x:Name="buttonAdd"                         FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xED0E;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="ADD TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='3' x:Name="buttonView"                          FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEE92;" />
+                        <Button x:ConnectionId='4' x:Name="buttonView"                          FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEE92;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="VIEW TASK"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xE700;" />
+                        <Button x:ConnectionId='3' x:Name="buttonDrive"                           FontFamily="Segoe MDL2 Assets" FontSize="25" Width="50" Height="50" Content="&#xEB42;" />
                         <TextBlock FontWeight="SemiBold" FontSize="16" VerticalAlignment="Center" Margin="10" Text="DRINK"/>
                     </StackPanel>
 
@@ -45,7 +45,7 @@
 
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='6' x:Name="MyFrame">
+                <Frame x:ConnectionId='7' x:Name="MyFrame">
                     <TextBlock FontSize="30">test</TextBlock>
                 </Frame>
             </SplitView.Content>
