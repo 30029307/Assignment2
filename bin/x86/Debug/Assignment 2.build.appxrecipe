@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>BP020367</Machine>
-    <WindowsUser>30029307</WindowsUser>
+    <Machine>DESKTOP-GSRJHEM</Machine>
+    <WindowsUser>Derick</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e81706aa-33a8-4152-b864-c7c7bb55b0d6</PackageIdentityName>
     <PackageIdentityPublisher>CN=30029307</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\30029307\source\repos\Assignment2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Assignment 2.exe">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Assignment 2.exe">
       <PackagePath>entrypoint\Assignment 2.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,85 +34,88 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\border.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\border.png">
       <PackagePath>Assets\border.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\complete.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\complete.png">
       <PackagePath>Assets\complete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\incomplete.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\incomplete.png">
       <PackagePath>Assets\incomplete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\Yellow-background.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\Yellow-background.png">
       <PackagePath>Assets\Yellow-background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Assets\drinkinfo.gif">
-      <PackagePath>Assets\drinkinfo.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\drinkwater2.gif">
+      <PackagePath>Assets\drinkwater2.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Assets\drinkwater.gif">
+      <PackagePath>Assets\drinkwater.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Assignment 2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Assignment 2.xr.xml">
       <PackagePath>Assignment 2.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\AddTask.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\AddTask.xbf">
       <PackagePath>AddTask.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Drink.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Drink.xbf">
       <PackagePath>Drink.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Login.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\StartPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\StartPage.xbf">
       <PackagePath>StartPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Registration.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Registration.xbf">
       <PackagePath>Registration.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\ViewTask.xbf">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\ViewTask.xbf">
       <PackagePath>ViewTask.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\30029307\source\repos\Assignment2\bin\x86\Debug\Core\Assignment 2.exe">
+    <AppxPackagedFile Include="C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Core\Assignment 2.exe">
       <PackagePath>Assignment 2.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

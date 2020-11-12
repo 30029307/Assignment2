@@ -34,11 +34,11 @@ namespace Assignment_2
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         ///
-         static Random rand = new Random();
-
+        static Random rand = new Random();
       
 
         internal static List<User> user = new List<User>() { new User() { FirstName = "Paul", LastName = "Morris", Contact = "1", Email = "//", Id = 1, Username = "paul", Password = "1234" } };
+        internal static User userLoggedInfo = new User();
 
         internal static string[] bgColors = new string[] {
             "#FFE2869F",
@@ -100,7 +100,7 @@ namespace Assignment_2
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(StartPage), e.Arguments);
                     
                 }
                 // Ensure the current window is active
@@ -134,10 +134,9 @@ namespace Assignment_2
 
         internal static async void Login(TextBox textBoxUsername,PasswordBox textBoxPass,Frame frame) {
 
-           // Frame rootFrame = Window.Current.Content as Frame;
+            Frame rootFrame = Window.Current.Content as Frame;
 
             MessageDialog msg = new MessageDialog("", "");
-
             var userQuery = App.user.Where(u => u.Username.Equals(textBoxUsername.Text) && u.Password.Equals(textBoxPass.Password)).FirstOrDefault();
 
             if (userQuery == null)
@@ -149,7 +148,11 @@ namespace Assignment_2
             {
                 msg.Content = String.Format("Welcome {0}", userQuery.Username);
                 msg.Title = "Login Successful";
-                frame.Navigate(typeof(MainPage));
+                rootFrame.Navigate(typeof(MainPage));
+
+                App.userLoggedInfo = new User() { Username = userQuery.Username, FirstName = userQuery.FirstName, LastName = userQuery.LastName, Id = userQuery.Id, Contact = userQuery.Contact, Email = userQuery.Email, Password = userQuery.Password };
+
+
             }
             await msg.ShowAsync();
         }
@@ -219,16 +222,19 @@ namespace Assignment_2
             SpeechSynthesizer r = new SpeechSynthesizer();
             MediaElement mediaplayer = new MediaElement();
             var voice = SpeechSynthesizer.AllVoices;
-            r.Voice = voice.First(gender => gender.Gender == VoiceGender.Female);
+            r.Voice = voice.First(gender => gender.Gender == VoiceGender.Male);
             int randomJokeNumber = rand.Next(0, JokeManager.Jokes.Count);
 
             /////////////////////////////////////////////////////////////////////////
 
             tb1.Text = "\"" + JokeManager.Jokes[randomJokeNumber].FirstLine + "\"";
             tb2.Text = JokeManager.Jokes[randomJokeNumber].SecondLine;
+
+            var fullText = tb1.Text + tb2.Text;
             
 
-            var stream = await r.SynthesizeTextToStreamAsync(tb1.Text + tb2.Text);
+
+            var stream = await r.SynthesizeTextToStreamAsync(fullText);
             mediaplayer.SetSource(stream, stream.ContentType);
             mediaplayer.Play();
 
@@ -236,7 +242,13 @@ namespace Assignment_2
 
         }
 
+        internal static string ReturnFullname() {
+            return App.userLoggedInfo.FirstName + " " + App.userLoggedInfo.LastName;
+        }
+
        
+
+      
 
 
     }

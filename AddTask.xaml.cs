@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Media.SpeechSynthesis;
@@ -15,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -30,13 +32,14 @@ namespace Assignment_2
         int ctr = 0;
       
 
-
         public AddTask()
         {
             this.InitializeComponent();
+
+
+            datePicker.SelectedDate = DateTime.Now;
            
-            App.RandomBackground(gridAddTask);
-            App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
+            
 
             timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0,0,1);
@@ -45,28 +48,47 @@ namespace Assignment_2
             timer.Tick += timer_tick;
         }
 
-        private void buttonAdd_Click(object sender, RoutedEventArgs e)
+        private async void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            TaskManager.AddTask(textBoxTask.Text, datePicker.SelectedDate.Value.Date.ToShortDateString());
+           
+            if (textBoxTask.Text == "")
+            {
+                    
+                    warningTextBlock.Visibility = Visibility.Visible;
+                     await System.Threading.Tasks.Task.Delay(3500);
+                    warningTextBlock.Visibility = Visibility.Collapsed;
+
+            }
+            else {
+                TaskManager.AddTask(textBoxTask.Text, datePicker.SelectedDate.Value.Date.ToShortDateString());
+                Frame.Navigate(typeof(ViewTask));
+            }
+
+            
+
+
         }
 
         void timer_tick(object sender, object e ) {
 
-           
-            var frame = Window.Current.Content as Frame;
+            var frame = Frame.SourcePageType;
 
-            //App.Speak();
+            var frameName = frame.Name;
             ctr++;
 
-           
-
-            if (ctr >= 8 && frame.Name == "AddTask") {
+            if (ctr >= 8 && frameName == "AddTask")
+            {
                 ctr = 0;
-                    App.RandomBackground(gridAddTask);
-                    App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
-            }
 
-        }
+                App.RandomBackground(gridAddTask);
+                App.DisplayJoke(textBlockFirstLine, textBlockSecondLine);
+                textBlockFirstLine.Foreground = new SolidColorBrush(Colors.GhostWhite);
+                textBlockSecondLine.Foreground = new SolidColorBrush(Colors.GhostWhite);
+            }
+            else if(frameName != "AddTask") {
+                timer.Stop();
+            }
+     }
 
      
 

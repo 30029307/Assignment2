@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 
@@ -51,8 +52,9 @@ namespace Assignment_2
             else
             {
                 dt.Stop();
-                timerTextBlock.Text = "BOOM PUTANGINA MO";
-                timerTextBlock.Foreground = new SolidColorBrush(Colors.Red);
+                timerTextBlock.Text = "Drink your water now!!";
+                timerTextBlock.Foreground = new SolidColorBrush(Colors.CadetBlue);
+                imageWater.Source = new BitmapImage(new Uri("ms-appx:///Assets/drinkwater2.gif"));
                 timerTextBlock.FontSize = 70;
             }
         }
@@ -65,7 +67,7 @@ namespace Assignment_2
 
         private void comboBoxName_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            imageWater.Source = new BitmapImage(new Uri("ms-appx:///Assets/drinkwater.gif"));
             timerTextBlock.FontSize = 70;
             timerTextBlock.Foreground = new SolidColorBrush(Colors.Black);
             ComboBoxItem cmb = comboBox.SelectedItem as ComboBoxItem;

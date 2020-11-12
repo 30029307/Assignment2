@@ -57,7 +57,7 @@
 
 
                         <StackPanel Orientation="Vertical" Margin="10,0,0,0">
-                            <TextBlock FontSize="15" TextDecorations="None" Text="{x:Bind TaskName}"/>
+                            <TextBlock FontSize="15" TextDecorations="None" Text="{x:Bind TaskName}" Width="180" TextWrapping="Wrap"/>
                             <TextBlock FontSize="15" TextDecorations="Underline" Text="{x:Bind dateStatus}"/>
                             <TextBlock FontSize="12" TextDecorations="Underline" Text="{x:Bind Date}" />
                            

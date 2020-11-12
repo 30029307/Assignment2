@@ -29,6 +29,11 @@ namespace Assignment_2
             this.InitializeComponent();
            
             MyFrame.Navigate(typeof(AddTask));
+
+
+           
+            textBlockDate.Text = DateTime.Now.ToShortDateString();
+            textBlockName.Text = App.ReturnFullname();
         }
 
         private void buttonMain_Click(object sender, RoutedEventArgs e)
@@ -40,26 +45,68 @@ namespace Assignment_2
             else
             {
                 MySplitView.IsPaneOpen = false;
+                
             }
+
+            
 
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(AddTask));
-       
+
+            try
+            {
+                MyFrame.Navigate(typeof(AddTask));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+      
         }
 
         private void buttonView_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(ViewTask));
-
-            
+            try
+            {
+                MyFrame.Navigate(typeof(ViewTask));
+            }
+            catch (Exception)
+            {
+                throw;
+            }            
         }
 
         private void buttonDrive_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(Drink));
+
+            try
+            {
+                MyFrame.Navigate(typeof(Drink));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            textBlockName.Text = App.ReturnFullname();
+        }
+
+        private void buttonLogout_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                Application.Current.Exit();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

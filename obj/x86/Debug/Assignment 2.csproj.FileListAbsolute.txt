@@ -191,7 +191,6 @@ C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.g.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.xaml
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\StartPage.xbf
-C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Assignment 2.csprojAssemblyReference.cache
 C:\Users\Derick\source\repos\Assignment2\bin\x86\Debug\Drink.xbf
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.g.i.cs
 C:\Users\Derick\source\repos\Assignment2\obj\x86\Debug\Drink.g.cs

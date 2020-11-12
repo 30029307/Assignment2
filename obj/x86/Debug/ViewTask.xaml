@@ -57,7 +57,7 @@
 
 
                         <StackPanel Orientation="Vertical" Margin="10,0,0,0">
-                            <TextBlock x:ConnectionId='25' FontSize="15" TextDecorations="None"                         />
+                            <TextBlock x:ConnectionId='25' FontSize="15" TextDecorations="None"                          Width="180" TextWrapping="Wrap"/>
                             <TextBlock x:ConnectionId='26' FontSize="15" TextDecorations="Underline"                           />
                             <TextBlock x:ConnectionId='27' FontSize="12" TextDecorations="Underline"                      />
                            

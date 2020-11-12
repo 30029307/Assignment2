@@ -46,12 +46,12 @@ namespace Assignment_2.Models
             new Joke() { FirstLine = "Thanks for telling me the definition of the word many.",SecondLine = "It means a lot." },
             new Joke() { FirstLine = "Why couldn't the bicycle stand up?",SecondLine = "Because it was two tired!" },
             new Joke() { FirstLine = "Patient: Oh doctor, I'm just so nervous. This is my first operation.",SecondLine = "Don't worry. Mine too." },
-            new Joke() { FirstLine = "My wilfe told me I need to quit playing Wonderwall on guitar.",SecondLine = "I said maybe..." },
+            new Joke() { FirstLine = "My wife told me I need to quit playing Wonderwall on guitar.",SecondLine = "I said maybe..." },
             new Joke() { FirstLine = "When somebody asks my dad how he feels, he always replies..",SecondLine = "With my hands." },
             new Joke() { FirstLine = "Dear Algebra, Please stop asking us to find your x.",SecondLine = "She is not coming back." },
             new Joke() { FirstLine = "Stairs cannot be trusted.",SecondLine = "They're always Up to something." },
             new Joke() { FirstLine = "Why is the math book so sad?",SecondLine = "It's got too many problems." },
-            new Joke() { FirstLine = "Jokes about unemployed people are not funny.",SecondLine = "They just dont't work." },
+            new Joke() { FirstLine = "Jokes about unemployed people are not funny.",SecondLine = "They just don't work." },
          
 
             

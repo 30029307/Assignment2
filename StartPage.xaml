@@ -15,8 +15,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="0" Background="#FFCD20">
-            <TextBlock Margin="20,110,0,0" FontSize="78" FontWeight="SemiBold" Foreground="#FFFFF8F2"  Text="Hello"/>
-            <TextBlock Margin="20,170,0,0" FontSize="100" FontWeight="Bold" Foreground="#FFFFF8F2"  Text="Derick."/>
+            <TextBlock Margin="20,110,0,0" FontSize="78" FontWeight="SemiBold" Foreground="#FFFFF8F2"  Text="Need some"/>
+            <TextBlock Margin="20,200,0,0" FontSize="100" FontWeight="Bold" Foreground="#FFFFF8F2"  Text="Reminders?." TextWrapping="Wrap"/>
         </Grid>
         
         <Frame x:Name="MainFrame" x:FieldModifier="Public" Grid.Column="1"></Frame>

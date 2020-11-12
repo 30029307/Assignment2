@@ -17,8 +17,7 @@
             <PasswordBox x:ConnectionId='6' x:Name="textBoxPassword" Style="{StaticResource Password}" PlaceholderText="Password" />
             <TextBox x:ConnectionId='7' x:Name="textBoxEmail" Style="{StaticResource RegisterTextBox}" PlaceholderText="Email" />
             <TextBox x:ConnectionId='8' x:Name="textBoxContact" Style="{StaticResource RegisterTextBox}" PlaceholderText="Contact" />
-            <RadioButton Margin="8,15,0,0" Content="I Accept terms and conditions and privacy policy" FontSize="20" FontWeight="Thin"/>
-            <RelativePanel Margin="0,20,0,0" >
+             <RelativePanel Margin="0,20,0,0" >
                 <Button x:ConnectionId='9' x:Name="buttonRegister"                              Margin="0,0,20,0" Content="Register" Width="180" FontSize="30" RelativePanel.LeftOf="buttonLogin" CornerRadius="25,25,25,25" Background="#FFFA1744" Foreground="AntiqueWhite" />
                 <Button x:ConnectionId='10' x:Name="buttonLogin"                           Content="Login" Style="{StaticResource LoginButton}" />
             </RelativePanel>

@@ -8,19 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#FFBCFFFE">
         <Grid.RowDefinitions>
             <RowDefinition Height=".5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
-        
-            <TextBlock x:ConnectionId='2' x:Name="timerTextBlock" Text="test" FontSize="40" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Image Source="/Assets/drinkinfo.gif" Width="500" Height="350" Grid.Row="1"/>
+        <TextBlock x:ConnectionId='2' x:Name="timerTextBlock" Text="Drink" FontSize="40" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Image x:ConnectionId='3' x:Name="imageWater" Source="/Assets/drinkwater.gif" Width="500" Height="350" Grid.Row="1" Stretch="Uniform"/>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" >
-            <ComboBox x:ConnectionId='3' x:Name="comboBox"                                                  Header="Remind me in:" Margin="0" Width="150" >
+            <ComboBox x:ConnectionId='4' x:Name="comboBox"                                                  Header="Remind me in:" Margin="0" Width="150" >
 
                 <ComboBoxItem Content="15 secs"/>
                 <ComboBoxItem Content="30 secs"/>
@@ -30,10 +30,10 @@
                 <ComboBoxItem Content="20 mins"/>
                 <ComboBoxItem Content="30 mins"/>
             </ComboBox>
-            <Button x:ConnectionId='4' x:Name="startButton" Content="Start" Width="100" Margin="25,0,0,0"                          />
+            <Button x:ConnectionId='5' x:Name="startButton" Content="Start" Width="100" Margin="25,0,0,0"                          />
 
         </StackPanel>
-    
+
 
 
     </Grid>

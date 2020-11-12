@@ -47,24 +47,25 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
         <RelativePanel >
             <Image Source="/Assets/border.png"  Style="{StaticResource borderImage}"/>
-            <TextBlock x:ConnectionId='6' x:Name="textBlockFirstLine"  Text="test"  Style="{StaticResource textBlockFirstLine}"/>
-            <TextBlock x:ConnectionId='7' x:Name="textBlockSecondLine"  Text="test"  Style="{StaticResource textBlockSecondLine}" />
+            <TextBlock x:ConnectionId='7' x:Name="textBlockFirstLine" Foreground="Gray" Text="Jokes randomly displays every 8 seconds."  Style="{StaticResource textBlockFirstLine}"/>
+            <TextBlock x:ConnectionId='8' x:Name="textBlockSecondLine" Foreground="Gray" Text="Thank you!"  Style="{StaticResource textBlockSecondLine}" />
 
         </RelativePanel>
 
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock x:ConnectionId='3' x:Name="warningTextBlock" Text="Please type any task!" FontSize="30" HorizontalAlignment="Center" Foreground="Black" Visibility="Collapsed"/>
             <StackPanel  Orientation="Horizontal">
-                <TextBox x:ConnectionId='4' x:Name="textBoxTask" Width="350" Margin="0,10,0,0" HorizontalContentAlignment="Center" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" PlaceholderText="New Task"  BorderThickness="0,0,0,3"/>
-                <DatePicker x:ConnectionId='5' Height="60" Margin="40,0,0,0" x:Name="datePicker" FontSize="18" Header="Until:"/>
+                <TextBox x:ConnectionId='5' x:Name="textBoxTask" Width="350" Margin="0,10,0,0" HorizontalContentAlignment="Center" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" PlaceholderText="New Task"  BorderThickness="0,0,0,3"/>
+                <DatePicker x:ConnectionId='6'  Height="60" Margin="40,0,0,0" x:Name="datePicker" FontSize="18" Header="Until:"/>
             </StackPanel>
-
-            <Button x:ConnectionId='3' Name="buttonAdd" Margin="40"                         FontSize="30" Content="Add task" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+               
+            <Button x:ConnectionId='4' Name="buttonAdd" Margin="40"                         FontSize="30" Content="Add task" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         </StackPanel>
         
